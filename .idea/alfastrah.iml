@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/Calculation" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\Calculation\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/Contract" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\Contract\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/Payment" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\Payment\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/Payment" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\Payment\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/PrintForm" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\PrintForm\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/PrintForm" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\PrintForm\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/Dictionary" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\Dictionary\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/Dictionary" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\Dictionary\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/KBM" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\KBM\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/KBM" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\KBM\" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/Calculation" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\Calculation\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Requests/Contract" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Requests\Contract\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Responses/DefaultError" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Responses\DefaultError\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Data" isTestSource="false" packagePrefix="Bedivierre\Alfastrah\Data\" />
+      <excludeFolder url="file://$MODULE_DIR$/testing" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bedivierre/craftsman" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

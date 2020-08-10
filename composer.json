@@ -1,0 +1,42 @@
+{
+    "name": "bedivierre/alfastrah",
+    "description": "Work with AlfastrahRSA 2.0 API",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1-dev",
+    "authors": [
+        {
+            "name": "Bedivierre",
+            "email": "dev@bedivierre.com"
+        }
+    ],
+    "support": {
+        "email": "support@bedivierre.com"
+    },
+    "require": {
+        "php": ">=7.1",
+        "bedivierre/craftsman":"dev-master",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bedivierre\\Alfastrah\\" : "src/",
+            "Bedivierre\\Alfastrah\\Requests\\" : "src/Requests/",
+            "Bedivierre\\Alfastrah\\Requests\\Dictionary\\" : "src/Requests/Dictionary/",
+            "Bedivierre\\Alfastrah\\Requests\\KBM\\" : "src/Requests/KBM/",
+            "Bedivierre\\Alfastrah\\Requests\\Calculation\\" : "src/Requests/Calculation/",
+            "Bedivierre\\Alfastrah\\Requests\\Contract\\" : "src/Requests/Contract/",
+            "Bedivierre\\Alfastrah\\Requests\\Payment\\" : "src/Requests/Payment/",
+            "Bedivierre\\Alfastrah\\Requests\\PrintForm\\" : "src/Requests/PrintForm/",
+            "Bedivierre\\Alfastrah\\Responses\\" : "src/Responses/",
+            "Bedivierre\\Alfastrah\\Responses\\DefaultError\\" : "src/Responses/DefaultError/",
+            "Bedivierre\\Alfastrah\\Responses\\Dictionary\\" : "src/Responses/Dictionary/",
+            "Bedivierre\\Alfastrah\\Responses\\KBM\\" : "src/Responses/KBM/",
+            "Bedivierre\\Alfastrah\\Responses\\Calculation\\" : "src/Responses/Calculation/",
+            "Bedivierre\\Alfastrah\\Responses\\Contract\\" : "src/Responses/Contract/",
+            "Bedivierre\\Alfastrah\\Responses\\Payment\\" : "src/Responses/Payment/",
+            "Bedivierre\\Alfastrah\\Responses\\PrintForm\\" : "src/Responses/PrintForm/",
+            "Bedivierre\\Alfastrah\\Data\\" : "src/Data/"
+        }
+    }
+}
