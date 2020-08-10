@@ -37,7 +37,7 @@ class CalculationRequest extends BaseRequest
         $this->addRequirement('agent', CheckData::TYPE_DATA_OBJECT);
 
         $this->drivers = new BaseDataObject();
-        $this->addRequirement('drivers', CheckData::TYPE_DATA_OBJECT);
+        $this->addRequirement('drivers', CheckData::TYPE_DATA_OBJECT, false);
         $this->addRequirement('insurance_contract', CheckData::TYPE_DATA_OBJECT);
 
         $this->addRequirement('transport_insurer', function (TransportOwnerData $ti){
@@ -55,6 +55,11 @@ class CalculationRequest extends BaseRequest
     }
 
     public function addDriver(CalculationDriverData $data){
+        if($this->insurance_contract && !$this->insurance_contract->drivers_restriction) {
+            return;
+        }
+        if(!$this->drivers)
+            $this->drivers = new BaseDataObject();
         $this->drivers[] = $data;
     }
 
@@ -75,6 +80,8 @@ class CalculationRequest extends BaseRequest
             $is_rent, $drivers_restriction, $follow_to_registration);
         if(!$follow_to_registration)
             $ic->addOperationPeriod(new Period($begin_date, $end_date));
+        if(!$drivers_restriction)
+            $this->removeMember($this->drivers);
         $this->insurance_contract = $ic;
     }
     public function applyInsuranceContract(InsuranceContractData $data){
@@ -102,7 +109,10 @@ class CalculationRequest extends BaseRequest
             $this->transport_insurer = new TransportOwnerData();
         $this->transport_insurer->setJuridicalData();
     }
-    public function insurerPhone(Phone $ph){
+    public function insurerPhone(string $ph){
+        $this->transport_insurer->addPhone(new Phone($ph));
+    }
+    public function insurerPhoneApply(Phone $ph){
         $this->transport_insurer->addPhone($ph);
     }
     public function insurerAddress(string $location, string $street = '', string $house_number = '', string $building = '',
@@ -136,7 +146,10 @@ class CalculationRequest extends BaseRequest
         $this->transport_owner->setJuridicalData();
     }
 
-    public function ownerPhone(Phone $ph){
+    public function ownerPhone(string $ph){
+        $this->transport_owner->addPhone(new Phone($ph));
+    }
+    public function ownerPhoneApply(Phone $ph){
         $this->transport_owner->addPhone($ph);
     }
     public function ownerAddress(string $location, string $street = '', string $house_number = '', string $building = '',
