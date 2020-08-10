@@ -30,6 +30,6 @@ class VehicleIdentity extends BaseDataObject
         $this->addRequirement('body_number', 'string', false);
         $this->addRequirement('chassis_number', 'string', false);
         $this->addRequirement('vin', 'string', false);
-        $this->addRequirement('licence_plate', 'string');
+        $this->addRequirement('licence_plate', 'string', false);
     }
 }

@@ -50,7 +50,6 @@ class CalculationRequest extends BaseRequest
                 return $to->organization->checkRequirements();
             return $to->person->checkRequirements();
         });
-
         $this->addRequirement('vehicle', CheckData::TYPE_DATA_OBJECT);
     }
 

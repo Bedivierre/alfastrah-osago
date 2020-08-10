@@ -6,12 +6,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Bedivierre/Craftsman.git",
-            "reference": "0338912d27933b58ac9f695cdcec192863c88766"
+            "reference": "c9ba572e194d2b37a759114b7ab56aa15ff97917"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/0338912d27933b58ac9f695cdcec192863c88766",
-            "reference": "0338912d27933b58ac9f695cdcec192863c88766",
+            "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/c9ba572e194d2b37a759114b7ab56aa15ff97917",
+            "reference": "c9ba572e194d2b37a759114b7ab56aa15ff97917",
             "shasum": ""
         },
         "require": {
@@ -20,7 +20,7 @@
             "ext-mbstring": "*",
             "php": ">=7.1"
         },
-        "time": "2020-08-07T14:34:18+00:00",
+        "time": "2020-08-10T11:44:06+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {

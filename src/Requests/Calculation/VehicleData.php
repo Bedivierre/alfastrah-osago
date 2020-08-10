@@ -37,6 +37,16 @@ class VehicleData extends BaseDataObject
             'use_with_trailer'=>$use_with_trailer,
             'registration_country' => $registration_country,
         ]);
+
+        $this->addRequirement('category', 'string');
+        $this->addRequirement('identity', CheckData::TYPE_DATA_OBJECT);
+        $this->addRequirement('registration_documents', CheckData::TYPE_DATA_OBJECT);
+        $this->addRequirement('mark', 'string');
+        $this->addRequirement('model', 'string');
+        $this->addRequirement('power_hp', 'float');
+        $this->addRequirement('production_year', 'int');
+        $this->addRequirement('registration_country', 'string');
+        $this->addRequirement('use_with_trailer', 'boolean');
     }
 
     public function setIdentity(string $licence_plate, string $body_number = '', string $chassis_number = '', string $vin = ''){
