@@ -28,11 +28,13 @@ use Bedivierre\Craftsman\Masonry\BaseDataObject;
  */
 class ContractRequest extends BaseRequest
 {
-    public function __construct(string $uid, $testmode = null)
+    public function __construct(string $uid,string $card_number, string $upcoming_maintenance_date,
+                                string $card_series = '', $testmode = null)
     {
         $uri = str_replace('{osago_uuid}', $uid, AS_API::$contract);
         $this->_osago_uuid = $uid;
         parent::__construct($uri, 'post', $testmode);
+        $this->maintenanceCard($card_number, $upcoming_maintenance_date, $card_series);
 
         $this->addRequirement('maintenance_card', CheckData::TYPE_DATA_OBJECT, false);
     }

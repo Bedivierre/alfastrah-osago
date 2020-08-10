@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4231cd68-d399-447e-81c8-b189d96fb232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/Calculation/CalculationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/Calculation/CalculationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/Contract/ContractRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/Contract/ContractRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,12 +81,32 @@
       <workItem from="1596697899894" duration="26215000" />
       <workItem from="1596786789499" duration="19877000" />
       <workItem from="1597042826301" duration="6494000" />
-      <workItem from="1597049334853" duration="6501000" />
+      <workItem from="1597049334853" duration="7231000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавлен ридми, мелкие правки.">
+      <created>1597057449469</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597057449469</updated>
+    </task>
+    <task id="LOCAL-00002" summary="правка ридми">
+      <created>1597057686051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597057686051</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавлен ридми, мелкие правки." />
+    <MESSAGE value="правка ридми" />
+    <option name="LAST_COMMIT_MESSAGE" value="правка ридми" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="186" key="#Servers" timestamp="1596632464291">
@@ -106,6 +125,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596809401792" />
+    <state x="585" y="105" key="CommitChangelistDialog2" timestamp="1597057685531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="105" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597057685531" />
     <state x="774" y="401" key="ComposerDumpAutoloadDialog" timestamp="1596716769286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,6 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="407" key="PhpMappingAdvancedResolveDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596632877487" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597057687311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597057687311" />
     <state x="666" y="253" width="587" height="534" key="find.popup" timestamp="1597044634893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,12 +207,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/testing/test.php</url>
-          <line>123</line>
+          <line>121</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/testing/test.php</url>
-          <line>69</line>
+          <line>67</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -195,17 +222,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/testing/test.php</url>
-          <line>101</line>
+          <line>99</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/testing/test.php</url>
-          <line>113</line>
+          <line>111</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/testing/test.php</url>
-          <line>82</line>
+          <line>80</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
