@@ -23,14 +23,20 @@ use Bedivierre\Craftsman\Masonry\BaseDataObject;
  */
 class KBMPhysicalRequest extends BaseRequest
 {
-    public function __construct(string $name, string $inn, bool $rf_resident = true, $testmode = null)
+    public function __construct($testmode = null)
     {
         parent::__construct(AS_API::$kbm_physical, 'post', $testmode);
         $this->persons = new BaseDataObject();
         $this->addRequirement('persons', 'bdo');
     }
 
-    public function addPerson(PersonDataBlock $dataBlock){
+    public function addPerson(string $last_name, string $first_name, string $middle_name, string $birth_date,
+                              string $document_series, string $document_number){
+        $dataBlock = new PersonDataBlock($last_name, $first_name, $middle_name, $birth_date,
+            $document_series, $document_number);
+        $this->applyPerson($dataBlock);
+    }
+    public function applyPerson(PersonDataBlock $dataBlock){
         $this->persons[] = $dataBlock;
     }
 

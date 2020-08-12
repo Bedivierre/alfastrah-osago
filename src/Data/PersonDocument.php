@@ -3,6 +3,7 @@
 
 namespace Bedivierre\Alfastrah\Data;
 
+use Bedivierre\Alfastrah\AS_Const;
 use Bedivierre\Craftsman\Masonry\BaseDataObject;
 
 /**
@@ -20,6 +21,22 @@ use Bedivierre\Craftsman\Masonry\BaseDataObject;
  */
 class PersonDocument extends BaseDataObject
 {
+    public function __construct(string $last_name, string $first_name, string $middle_name, string $birth_date,
+                                string $document_series, string $document_number,
+                                string $document_type)
+    {
+        parent::__construct([
+            'birth_date' => $birth_date,
+            'country' => AS_Const::VEHICLE_DEFAULT_COUNTRY,
+            'document_number' => $document_number,
+            'document_series' => $document_series,
+            'document_type' => $document_type,
+            'last_name' => $last_name,
+            'first_name' => $first_name,
+            'middle_name' => $middle_name,
+        ]);
+    }
+
     public function onInitialize()
     {
         $this->addRequirement('birth_date', ['pattern'=>'\d{4}-\d{2}-\d{2}']);
