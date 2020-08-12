@@ -3,12 +3,14 @@
 
 namespace Bedivierre\Alfastrah\Responses\Calculation;
 
+use Bedivierre\Craftsman\Masonry\BaseDataObject;
+
 /**
  * Trait CalculationDetails
  * @package Bedivierre\Alfastrah\Responses\Calculation
  * @property float insurance_premium Страховая премия по договору ОСАГО
  * @property float kbm_value Значение КБМ, примененное для расчета договора
- * @property string[] kbm_calculation_comment_list
+ * @property string[]|BaseDataObject kbm_calculation_comment_list
  * @property string kbm_request_rsa_id Идентификатор расчета КБМ в РСА
  * @property boolean need_underwriter_coordination Признак необходимости согласования с андеррайтером
  * @property boolean success Признак успешности расчёта

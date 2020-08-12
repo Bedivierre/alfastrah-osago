@@ -4,6 +4,7 @@
 namespace Bedivierre\Alfastrah\Responses\Contract;
 
 use Bedivierre\Alfastrah\Data\Period;
+use Bedivierre\Craftsman\Masonry\BaseDataObject;
 
 /**
  * Trait InsuranceContractData
@@ -13,7 +14,7 @@ use Bedivierre\Alfastrah\Data\Period;
  * @property string contract_series
  * @property string discount_program
  * @property string end_date
- * @property Period[] operation_periods
+ * @property Period[]|BaseDataObject operation_periods
  * @property string premium_amount
  */
 trait InsuranceContractData
